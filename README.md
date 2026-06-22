@@ -73,6 +73,15 @@ terraform destroy
 - AWS EC2
 - AWS NAT Gateway
 - AWS Security Groups
+- Remote State Management
+
+To improve Terraform state management, this project uses:
+
+- Amazon S3 for storing Terraform state files remotely.
+- Amazon DynamoDB for state locking and preventing concurrent modifications.
+- A backend configuration defined in "backend.tf".
+
+This approach ensures secure, consistent, and collaborative infrastructure management.
 
 ## Author
-Your Name - DevOps Engineer
+THOTA HIMA SAI SINDHU - Aspiring DevOps Engineer
